@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Dangrek&family=Rubik+Dirt&display=swap" rel="stylesheet">
+  <title>Etch and Sketch</title>
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1>ETCH-A-SKETCH</h1>
+    </div>
+    <div>
+      <input type="text" placeholder="" value="16" onchange="inputSize(this.value)">
+      <button class= 'input-size'>Get Size</button>
+      <p class="massage">Pickup a number between 2 and 30</p>
+    </div>
+    <div class="container"></div>
+  </header>
+  <main class="buttons">
+    <button class="black" onclick="blackColor()">Black</button>
+    <button class="grey" onclick="greyColor()">Grey</button>
+    <button class="random" onclick='randomColor()'>Random</button>
+    <button class="eraser" onclick="erasColor()">Eraser</button>
+
+
+  </main>
+
+
+  <script src="main.js" charset="utf-8"></script>
+</body>
+
+</html>
